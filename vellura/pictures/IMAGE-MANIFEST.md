@@ -43,8 +43,8 @@ It is listed in `WHATS-NOT-DECIDED.md`.
 Five CC0 photographs were pulled and then rejected on inspection. Recording them so nobody
 re-sources the same mistakes:
 
-- **Branded competitor tube** — a real "SKEYNDOR Urban White Spots Eraser Cream" pack shot.
-  Third-party trademark, and the wrong indication (dark spots, not hair).
+- **Branded competitor tube** — a real branded competitor pack shot with the brand name
+  legible on the tube. Third-party trademark, and the wrong indication (dark spots, not hair).
 - **Retail pill bottles** — labels legible, one reading "BuPROPion Hydrochloride Extended
   Release". A named antidepressant in a hirsutism funnel is incongruent and a compliance
   hazard. We also ship a cream, not oral tablets.

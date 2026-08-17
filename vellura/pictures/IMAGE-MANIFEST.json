@@ -1,86 +1,114 @@
-[
-  {
-    "file": "hero-texture.jpg",
-    "slot": "hero-texture",
-    "purpose": "Lander hero background. Soft cream texture, no human subject.",
-    "status": "STAND-IN",
-    "title": "Cream texture background",
-    "license": "CC0",
-    "license_version": "1.0",
-    "creator": null,
-    "source": "rawpixel",
-    "landing_page": "https://www.rawpixel.com/image/5915411/image-background-texture-public-domain",
-    "matched_query": "cream texture cosmetic",
-    "bytes": 302660
-  },
-  {
-    "file": "product-tube.jpg",
-    "slot": "product-tube",
-    "purpose": "Hero SKU stand-in. Real pack shot required before launch.",
-    "status": "STAND-IN",
-    "title": "Minimal toothpaste tube mockup psd in black and white",
-    "license": "CC0",
-    "license_version": "1.0",
-    "creator": "skeyndor.oficial",
-    "source": "flickr",
-    "landing_page": "https://www.flickr.com/photos/57794015@N05/51912143217",
-    "matched_query": "cosmetic tube white",
-    "bytes": 25095
-  },
-  {
-    "file": "hands-cream.jpg",
-    "slot": "hands-cream",
-    "purpose": "Application step visual. Hands only, no face.",
-    "status": "STAND-IN",
-    "title": "Woman applying cream to hand",
-    "license": "CC0",
-    "license_version": "1.0",
-    "creator": "Moose Photos (https://www.pexels.com/@moose-photos-170195/)",
-    "source": "wikimedia",
-    "landing_page": "https://commons.wikimedia.org/w/index.php?curid=188543375",
-    "matched_query": "hands cream applying",
-    "bytes": 484296
-  },
-  {
-    "file": "bathroom.jpg",
-    "slot": "bathroom",
-    "purpose": "Routine / ritual context shot.",
-    "status": "STAND-IN",
-    "title": "626647832",
-    "license": "CC0",
-    "license_version": "1.0",
-    "creator": "skeyndor.oficial",
-    "source": "flickr",
-    "landing_page": "https://www.flickr.com/photos/57794015@N05/28093557419",
-    "matched_query": "bathroom mirror morning",
-    "bytes": 87830
-  },
-  {
-    "file": "pharmacy.jpg",
-    "slot": "pharmacy",
-    "purpose": "Compounding pharmacy / fulfillment section.",
-    "status": "STAND-IN",
-    "title": "Leading Lines",
-    "license": "PDM",
-    "license_version": "1.0",
-    "creator": "AshleighL.",
-    "source": "flickr",
-    "landing_page": "https://www.flickr.com/photos/135348268@N05/25301356832",
-    "matched_query": "pharmacy compounding",
-    "bytes": 121034
-  },
-  {
-    "file": "calm-fabric.jpg",
-    "slot": "calm-fabric",
-    "purpose": "Neutral section divider / results page ground.",
-    "status": "STAND-IN",
-    "title": "Brentano - Coloratura, Medley, Gliss & Marimba - Symphonic Collection Spring 2013",
-    "license": "PDM",
-    "license_version": "1.0",
-    "creator": "Brentano fabrics",
-    "source": "flickr",
-    "landing_page": "https://www.flickr.com/photos/42298505@N02/8465574814",
-    "matched_query": "linen fabric texture",
-    "bytes": 235337
-  }
-]
+{
+  "generated_by": "_build/make_manifest.py",
+  "authoritative_source": "IMAGE-MANIFEST.md",
+  "note": "Every asset in this folder is a STAND-IN. None are final. No image in this funnel contains a human face: a stock face beside facial-hair-treatment copy reads as an implied patient endorsement and an implied before/after.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "file": "hero-texture.jpg",
+      "status": "STAND-IN",
+      "bytes": 302660,
+      "sha256": "de66ae3bd3b806ea",
+      "slot": "hero-texture",
+      "purpose": "Lander hero ground. Soft cream texture, no human subject.",
+      "origin": "Openverse (rawpixel)",
+      "license": "CC0 1.0",
+      "license_note": "Public domain dedication. No attribution required, commercial use permitted.",
+      "creator": null,
+      "landing_page": "https://www.rawpixel.com/image/5915411/image-background-texture-public-domain",
+      "third_party_rights": false
+    },
+    {
+      "file": "product-tube.png",
+      "status": "STAND-IN",
+      "bytes": 1072469,
+      "sha256": "ba49ff88bc425632",
+      "slot": "product-tube",
+      "purpose": "Hero SKU pack shot. Unbranded, blank label.",
+      "origin": "Generated \u2014 Higgsfield, model nano_banana_2, 1:1, 1k",
+      "license": "Generated asset",
+      "license_note": "No third-party rights. Not a photograph of any real product.",
+      "creator": null,
+      "landing_page": null,
+      "third_party_rights": false
+    },
+    {
+      "file": "hands-cream.png",
+      "status": "STAND-IN",
+      "bytes": 1342560,
+      "sha256": "8718139ff4b64545",
+      "slot": "hands-cream",
+      "purpose": "Application step. Hands only, no face.",
+      "origin": "Generated \u2014 Higgsfield, model nano_banana_2, 1:1, 1k",
+      "license": "Generated asset",
+      "license_note": "No third-party rights. No identifiable person.",
+      "creator": null,
+      "landing_page": null,
+      "third_party_rights": false
+    },
+    {
+      "file": "pharmacy.png",
+      "status": "STAND-IN",
+      "bytes": 1440187,
+      "sha256": "4032d712e29394fe",
+      "slot": "pharmacy",
+      "purpose": "Compounding / fulfilment section.",
+      "origin": "Generated \u2014 Higgsfield, model nano_banana_2, 1:1, 1k",
+      "license": "Generated asset",
+      "license_note": "No third-party rights. No readable labels, no people.",
+      "creator": null,
+      "landing_page": null,
+      "third_party_rights": false
+    },
+    {
+      "file": "calm-fabric.png",
+      "status": "STAND-IN",
+      "bytes": 1991355,
+      "sha256": "51f7b0d881dae8a8",
+      "slot": "calm-fabric",
+      "purpose": "Neutral section ground.",
+      "origin": "Generated \u2014 Higgsfield, model nano_banana_2, 1:1, 1k",
+      "license": "Generated asset",
+      "license_note": "No third-party rights.",
+      "creator": null,
+      "landing_page": null,
+      "third_party_rights": false
+    },
+    {
+      "file": "toe-solution.png",
+      "status": "STAND-IN",
+      "bytes": 1223716,
+      "sha256": "0b9e9edeb0ebf943",
+      "slot": "toe-solution",
+      "purpose": "Toe fungus (vertical #2) pack shot. Amber dropper bottle, because FP61 is a DMSO suspension and not a cream.",
+      "origin": "Generated \u2014 Higgsfield, model nano_banana_2, 1:1, 1k",
+      "license": "Generated asset",
+      "license_note": "No third-party rights. Not a photograph of any real product.",
+      "creator": null,
+      "landing_page": null,
+      "third_party_rights": false
+    }
+  ],
+  "rejected_during_sourcing": [
+    {
+      "reason": "Third-party trademark. A real branded competitor pack shot with the brand name legible on the tube, and the wrong indication (dark spots, not hair).",
+      "was_considered_for": "product-tube"
+    },
+    {
+      "reason": "Legible NDC labels including a named antidepressant (bupropion). Incongruent with a topical cream funnel and a compliance hazard.",
+      "was_considered_for": "pharmacy"
+    },
+    {
+      "reason": "Woman in a towel wearing a clay face mask. Implied-patient face shot, ruled out by the no-faces rule, and a different product category.",
+      "was_considered_for": "bathroom (slot dropped entirely)"
+    },
+    {
+      "reason": "Camouflage-pattern upholstery swatches. Clashes with the palette.",
+      "was_considered_for": "calm-fabric"
+    },
+    {
+      "reason": "Baby-blue hand cream flat lay. Palette fights the warm cream and plum system.",
+      "was_considered_for": "hands-cream"
+    }
+  ]
+}

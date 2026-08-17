@@ -84,14 +84,14 @@ body{background:#E8E2DC;font-family:var(--font-body);color:var(--ink);
 h2.q{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
   font-weight:700;letter-spacing:-.01em}
 h2.big{font-size:var(--text-2xl)}
-p.help{color:var(--ink-2);font-size:var(--text-sm);margin-top:var(--s2);line-height:1.55}
-p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(--ink-2)}
+p.help{color:var(--ink-2);font-size:var(--text-base);margin-top:var(--s2);line-height:1.55}
+p.body{margin-top:var(--s3);font-size:var(--text-base);line-height:1.65;color:var(--ink-2)}
 .hr{height:1px;background:var(--line);margin:var(--s5) 0}
 
 .opts{display:flex;flex-direction:column;gap:var(--s2);margin-top:var(--s4)}
 .opt{display:flex;align-items:center;gap:var(--s3);padding:14px var(--s4);
   border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--sand);
-  font-size:var(--text-sm);font-weight:500;color:var(--ink)}
+  font-size:var(--text-base);font-weight:500;color:var(--ink)}
 .opt .bx{width:20px;height:20px;border:1.5px solid #B9ABA0;background:#FFF;flex:none}
 .opt.rad .bx{border-radius:50%}
 .opt.chk .bx{border-radius:5px}
@@ -109,7 +109,7 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .fld label{display:block;font-size:var(--text-xs);font-weight:600;letter-spacing:.04em;
   text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
 .fld .in{border:1.5px solid var(--line);border-radius:var(--r-md);background:#FFF;
-  padding:13px var(--s3);font-size:var(--text-sm);color:var(--muted);min-height:46px}
+  padding:13px var(--s3);font-size:var(--text-base);color:var(--muted);min-height:46px}
 .fld .in.filled{color:var(--ink)}
 .fld .in.ta{min-height:88px}
 .fld.err .in{border-color:var(--error);background:var(--error-tint)}
@@ -117,7 +117,7 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .fld .cnt{margin-top:6px;font-size:var(--text-xs);color:var(--muted);text-align:right}
 
 .btn{display:block;width:100%;text-align:center;padding:15px;border-radius:var(--r-pill);
-  font-family:var(--font-body);font-size:var(--text-sm);font-weight:700;letter-spacing:.01em;
+  font-family:var(--font-body);font-size:var(--text-base);font-weight:700;letter-spacing:.01em;
   margin-top:var(--s4)}
 .btn.pri{background:var(--plum);color:#FFFCF9}
 .btn.gho{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
@@ -125,14 +125,14 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .btn.lnk{background:none;color:var(--ink-2);text-decoration:underline;font-weight:500;
   padding:10px;margin-top:var(--s2)}
 
-.note{margin-top:var(--s3);font-size:var(--text-xs);color:var(--muted);line-height:1.55}
+.note{margin-top:var(--s3);font-size:14px;color:var(--muted);line-height:1.55}
 .legal{margin-top:var(--s3);padding:var(--s3);border-left:2px solid var(--disabled);
-  background:#FAF7F4;font-size:var(--text-xs);color:var(--ink-2);line-height:1.55}
+  background:#FAF7F4;font-size:14px;color:var(--ink-2);line-height:1.55}
 .legal b{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
   color:var(--muted);margin-bottom:4px}
 
 .ban{margin-top:var(--s4);padding:var(--s3) var(--s4);border-radius:var(--r-md);
-  font-size:var(--text-sm);line-height:1.55;border:1px solid}
+  font-size:var(--text-base);line-height:1.55;border:1px solid}
 .ban.error{background:var(--error-tint);border-color:var(--error);color:#7E1B15}
 .ban.pause{background:var(--pause-tint);border-color:var(--pause);color:#6A4A11}
 .ban.ok{background:var(--ok-tint);border-color:var(--ok);color:#204C38}
@@ -144,14 +144,14 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .card .ct{padding:var(--s3) var(--s4);background:var(--sand);font-size:var(--text-xs);
   font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
 .card .rw{display:flex;justify-content:space-between;gap:var(--s3);padding:11px var(--s4);
-  border-top:1px solid var(--line);font-size:var(--text-sm)}
+  border-top:1px solid var(--line);font-size:var(--text-base)}
 .card .rw span:first-child{color:var(--ink-2)}
 .card .rw span:last-child{font-weight:600;text-align:right}
 .card .rw.tot{background:var(--sand);font-weight:700}
 .card .rw.tot span{color:var(--ink)}
 
 .ticks{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
-.tick{display:flex;gap:var(--s3);font-size:var(--text-sm);line-height:1.5}
+.tick{display:flex;gap:var(--s3);font-size:var(--text-base);line-height:1.5}
 .tick b{color:var(--ok);flex:none;font-size:1rem;line-height:1.3}
 
 .plan{border:1.5px solid var(--line);border-radius:var(--r-md);padding:var(--s4);
@@ -179,6 +179,24 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .steplab{padding:8px var(--s4) 0;font-size:var(--text-xs);color:var(--muted);font-weight:600;
   letter-spacing:.06em;text-transform:uppercase}
 
+
+/* A5: reserved regions. Deliberately empty and loudly marked, because the one thing we
+   must never do is fill them with invented quotes or an invented clinician. */
+.slot{margin-top:var(--s4);border:1.5px dashed var(--disabled);border-radius:var(--r-md);
+  background:#FAF7F4;padding:var(--s4);text-align:center}
+.slot .lab{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#B3261E;margin-bottom:6px}
+.slot .desc{font-size:14px;color:var(--muted);line-height:1.5}
+.slot .box{height:64px;border-radius:8px;background:#EFE9E3;margin-top:10px}
+
+/* A7: checkout trust row. CSS marks only, no third-party logo files. */
+.trust{margin-top:var(--s4);display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  justify-content:center}
+.trust span{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:#FFF}
+.trust .sec{border-color:var(--ok);color:var(--ok)}
+
+.plan .unit{font-size:14px;color:var(--ink-2);font-weight:600;margin-top:2px}
 .claim{border-bottom:1.5px dotted var(--clay)}
 .claim sup{font-size:.55rem;font-weight:700;color:var(--clay);vertical-align:super;
   margin-left:1px;letter-spacing:.02em}
@@ -189,8 +207,8 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .sect h3{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
   margin-bottom:var(--s2)}
 .faq{border-top:1px solid var(--line);padding:var(--s3) 0}
-.faq b{display:block;font-size:var(--text-sm);font-weight:600;margin-bottom:5px}
-.faq p{font-size:var(--text-sm);color:var(--ink-2);line-height:1.6}
+.faq b{display:block;font-size:var(--text-base);font-weight:600;margin-bottom:5px}
+.faq p{font-size:var(--text-base);color:var(--ink-2);line-height:1.6}
 
 /* ---- annotation panel ---- */
 .ann{width:380px;background:#FFFDFB;border:1px solid #CFC6BE;border-radius:12px;
@@ -209,4 +227,8 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .k.br{background:#E6DCE2;color:#6B3A4E}
 .k.rec{background:#DFE7E2;color:#2E6B4F}
 .k.stop{background:#FBECEB;color:#B3261E}
-</style></head><body><div class="board-h"><h1>B-02 — Results page</h1><div class="sub">Single screen, EN and ES, with its behaviour spec.</div></div><div class="stage"><div class="row"><div class="unit"><div class="code"><b>B-02</b><span>Results page</span></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct"></div></div><div class="pad"><div class="eyebrow">Your intake is complete</div><h2 class="q big">Based on your answers, you look like a candidate.</h2><p class="help">A licensed clinician makes the final decision. This is not an approval.</p><div class="card"><div class="ct">What you told us</div><div class="rw"><span>Areas</span><span>Upper lip, chin</span></div><div class="rw"><span>Removing</span><span>Every 2 to 3 days</span></div><div class="rw"><span>Already tried</span><span>Waxing, threading</span></div><div class="rw"><span>Goal</span><span>Stop planning around it</span></div></div><div class="hr"></div><h2 class="q">What we would send you</h2><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/product-tube.png" alt="Vellura Triple pack shot stand-in"></div><p class="body">Vellura Triple. Eflornithine 12%, azelaic acid 5%, metformin 5%, compounded in a 60g tube by a licensed pharmacy. Applied twice daily to the areas you listed.</p><div class="ticks"><div class="tick"><b>&#10003;</b><div>Your compounded cream, shipped free</div></div><div class="tick"><b>&#10003;</b><div>Clinician review and your prescription</div></div><div class="tick"><b>&#10003;</b><div>Unlimited messaging with the care team</div></div><div class="tick"><b>&#10003;</b><div>Adjustments at no extra cost</div></div><div class="tick"><b>&#10003;</b><div>Cancel anytime, no fee</div></div></div><div class="hr"></div><h2 class="q">The honest timeline</h2><p class="body"><span class="claim">Most people need about eight weeks before they see a change.<sup>C3</sup></span> <span class="claim">And it works while you use it, so if you stop, hair returns to the way it was within about eight weeks.<sup>C2</sup></span> Plan for months, not days.</p><div class="ban ok"><b>The 90-Day Fit Guarantee</b>Use it twice daily as directed for 90 days. If you see no change at all, message the care team and we refund your third month. We set it at 90 days because that is the window the ingredient is expected to need, not because it sounded good.</div><div class="btn pri">Choose my plan</div><div class="legal"><b>Legal copy &#183; do not reword</b>Vellura Triple is a compounded medication prepared by a licensed pharmacy for an individual patient. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or manufacturing quality. Prescription products are dispensed only after review by a licensed clinician. Not everyone is a candidate.</div></div></div></div><div class="unit"><div class="code"><b>B-02·ES</b><span>Results page</span><i class="v">ES</i></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct"></div></div><div class="pad"><div class="eyebrow">Su cuestionario está completo</div><h2 class="q big">Según sus respuestas, usted parece ser candidata.</h2><p class="help">Un profesional clínico con licencia toma la decisión final. Esto no es una aprobación.</p><div class="card"><div class="ct">Lo que nos contó</div><div class="rw"><span>Áreas</span><span>Labio superior, barbilla</span></div><div class="rw"><span>Frecuencia</span><span>Cada 2 o 3 días</span></div><div class="rw"><span>Ya probó</span><span>Cera, hilo</span></div><div class="rw"><span>Meta</span><span>Dejar de organizarse alrededor</span></div></div><div class="hr"></div><h2 class="q">Lo que le enviaríamos</h2><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/product-tube.png" alt="Vellura Triple pack shot stand-in"></div><p class="body">Vellura Triple. Eflornitina 12%, ácido azelaico 5%, metformina 5%, preparada en un tubo de 60g por una farmacia con licencia. Se aplica dos veces al día en las áreas que usted indicó.</p><div class="ticks"><div class="tick"><b>&#10003;</b><div>Su crema preparada, con envío gratis</div></div><div class="tick"><b>&#10003;</b><div>Revisión clínica y su receta</div></div><div class="tick"><b>&#10003;</b><div>Mensajes ilimitados con el equipo de cuidado</div></div><div class="tick"><b>&#10003;</b><div>Ajustes sin costo adicional</div></div><div class="tick"><b>&#10003;</b><div>Cancele cuando quiera, sin cargo</div></div></div><div class="hr"></div><h2 class="q">El plazo honesto</h2><p class="body"><span class="claim">La mayoría necesita unas ocho semanas antes de notar un cambio.<sup>C3</sup></span> <span class="claim">Y funciona mientras lo use, así que si lo suspende, el vello vuelve a como estaba en unas ocho semanas.<sup>C2</sup></span> Planee en meses, no en días.</p><div class="ban ok"><b>La Garantía de 90 Días</b>Úsela dos veces al día según las indicaciones durante 90 días. Si no ve ningún cambio, escriba al equipo de cuidado y le reembolsamos el tercer mes. Lo fijamos en 90 días porque ese es el plazo que se espera que el ingrediente necesite, no porque sonara bien.</div><div class="btn pri">Elegir mi plan</div><div class="legal"><b>Legal copy &#183; do not reword</b>Vellura Triple es un medicamento preparado (compounded) por una farmacia con licencia para un paciente individual. Los medicamentos preparados no están aprobados por la FDA y la FDA no los evalúa en cuanto a seguridad, eficacia ni calidad de fabricación. Los productos con receta se dispensan solo después de la revisión de un profesional clínico con licencia. No todas las personas son candidatas.</div></div></div></div><div class="ann"><h4>Behaviour</h4><dl><dt>Select</dt><dd>n/a. One CTA.</dd><dt>Branch</dt><dd>RECORD-ONLY.</dd><dt>Recorded</dt><dd>Nothing new. Echoes Q-02, Q-03, Q-04, Q-06 back to her verbatim.</dd><dt>Skippable</dt><dd>n/a</dd></dl><h4>Rules</h4><ul><li>Must say in plain words that this is NOT an approval. A results page that reads like an approval and is followed by a decline is the worst experience in the funnel.</li><li>The 90-Day Fit Guarantee appears here and again on C-01.</li></ul><h4>States drawn</h4><ul><li>Default</li></ul><h4>Claims on this screen</h4><ul><li><code>C2</code> <b>LABEL</b> — If you stop, hair returns to the way it was within about eight weeks.<br><span style='color:#8A7F76'>Vaniqa labeling: condition returns to pretreatment state ~8 weeks after discontinuation.</span></li><li><code>C3</code> <b>LABEL</b> — Most people need about eight weeks of twice-daily use before they see a change.<br><span style='color:#8A7F76'>Vaniqa labeling: improvement observed within 8 weeks of twice-daily use.</span></li></ul></div></div></div></body></html>
+/* Amber badges. A pause, a soft stop and a soft branch are NOT final states and must
+   never carry the red token. Same rule the screens and the tree already follow. */
+.k.pause{background:#FBF3E3;color:#8A6116}
+.k.soft{background:#FBF3E3;color:#8A6116}
+</style></head><body><div class="board-h"><h1>B-02 — Results page</h1><div class="sub">Single screen, EN and ES, with its behaviour spec.</div></div><div class="stage"><div class="row"><div class="unit"><div class="code"><b>B-02</b><span>Results page</span></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct"></div></div><div class="pad"><div class="eyebrow">Your intake is complete</div><h2 class="q big">Based on your answers, you look like a candidate.</h2><p class="help">A licensed clinician makes the final decision. This is not an approval.</p><div class="card"><div class="ct">What you told us</div><div class="rw"><span>Areas</span><span>Upper lip, chin</span></div><div class="rw"><span>Removing</span><span>Every 2 to 3 days</span></div><div class="rw"><span>Already tried</span><span>Waxing, threading</span></div><div class="rw"><span>Goal</span><span>Stop planning around it</span></div></div><div class="hr"></div><h2 class="q">What we would send you</h2><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/product-tube.png" alt="Vellura Triple pack shot stand-in"></div><p class="body">Vellura Triple. Eflornithine 12%, azelaic acid 5%, metformin 5%, compounded in a 60g tube by a licensed pharmacy. Applied twice daily to the areas you listed.</p><div class="ticks"><div class="tick"><b>&#10003;</b><div>Your compounded cream, shipped free</div></div><div class="tick"><b>&#10003;</b><div>Clinician review and your prescription</div></div><div class="tick"><b>&#10003;</b><div>Unlimited messaging with the care team</div></div><div class="tick"><b>&#10003;</b><div>Adjustments at no extra cost</div></div><div class="tick"><b>&#10003;</b><div>Cancel anytime, no fee</div></div></div><div class="hr"></div><h2 class="q">The honest timeline</h2><p class="body"><span class="claim">Most people need about eight weeks before they see a change.<sup>C3</sup></span> <span class="claim">And it works while you use it, so if you stop, hair returns to the way it was within about eight weeks.<sup>C2</sup></span> Plan for months, not days.</p><div class="ban ok"><b>The 90-Day Fit Guarantee</b>Use it twice daily as directed for 90 days. If you see no change at all, message the care team and we refund a month: $99 on monthly, $83 on the 3-month, $74.83 on the 6-month. We set it at 90 days because that is the window the ingredient is expected to need, not because it sounded good. No daily check-ins to keep it valid.</div><div class="btn pri">Choose my plan</div><div class="hr"></div><h2 class="q">Before you choose</h2><div class="faq"><b>What if I am not approved?</b><p>You are not charged. The authorization on your card is released and nothing is taken. The care team will tell you why and what to ask your own doctor about.</p></div><div class="faq"><b>Will my bank show a charge?</b><p>Your banking app may show a pending amount. That is an authorization hold, not a charge, and it disappears on its own if you are not approved. Money only moves when a clinician approves you.</p></div><div class="faq"><b>Can I cancel?</b><p>Any time, before the next renewal, without calling anyone. Cancelling stops future shipments; it does not claw back one you already received.</p></div><div class="btn pri">Choose my plan</div><div class="legal"><b>Legal copy &#183; do not reword</b>Vellura Triple is a compounded medication prepared by a licensed pharmacy for an individual patient. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or manufacturing quality. Prescription products are dispensed only after review by a licensed clinician. Not everyone is a candidate.</div></div></div></div><div class="unit"><div class="code"><b>B-02·ES</b><span>Results page</span><i class="v">ES</i></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct"></div></div><div class="pad"><div class="eyebrow">Su cuestionario está completo</div><h2 class="q big">Según sus respuestas, usted parece ser candidata.</h2><p class="help">Un profesional clínico con licencia toma la decisión final. Esto no es una aprobación.</p><div class="card"><div class="ct">Lo que nos contó</div><div class="rw"><span>Áreas</span><span>Labio superior, barbilla</span></div><div class="rw"><span>Frecuencia</span><span>Cada 2 o 3 días</span></div><div class="rw"><span>Ya probó</span><span>Cera, hilo</span></div><div class="rw"><span>Meta</span><span>Dejar de organizarse alrededor</span></div></div><div class="hr"></div><h2 class="q">Lo que le enviaríamos</h2><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/product-tube.png" alt="Vellura Triple pack shot stand-in"></div><p class="body">Vellura Triple. Eflornitina 12%, ácido azelaico 5%, metformina 5%, preparada en un tubo de 60g por una farmacia con licencia. Se aplica dos veces al día en las áreas que usted indicó.</p><div class="ticks"><div class="tick"><b>&#10003;</b><div>Su crema preparada, con envío gratis</div></div><div class="tick"><b>&#10003;</b><div>Revisión clínica y su receta</div></div><div class="tick"><b>&#10003;</b><div>Mensajes ilimitados con el equipo de cuidado</div></div><div class="tick"><b>&#10003;</b><div>Ajustes sin costo adicional</div></div><div class="tick"><b>&#10003;</b><div>Cancele cuando quiera, sin cargo</div></div></div><div class="hr"></div><h2 class="q">El plazo honesto</h2><p class="body"><span class="claim">La mayoría necesita unas ocho semanas antes de notar un cambio.<sup>C3</sup></span> <span class="claim">Y funciona mientras lo use, así que si lo suspende, el vello vuelve a como estaba en unas ocho semanas.<sup>C2</sup></span> Planee en meses, no en días.</p><div class="ban ok"><b>La Garantía de Ajuste de 90 Días</b>Úsela dos veces al día según las indicaciones durante 90 días. Si no ve ningún cambio, escriba al equipo de cuidado y le reembolsamos un mes: $99 en el plan mensual, $83 en el de 3 meses, $74.83 en el de 6 meses. Lo fijamos en 90 días porque ese es el plazo que se espera que el ingrediente necesite, no porque sonara bien. Sin registros diarios para mantenerla válida.</div><div class="btn pri">Elegir mi plan</div><div class="hr"></div><h2 class="q">Antes de elegir</h2><div class="faq"><b>¿Y si no me aprueban?</b><p>No se le cobra. La autorización en su tarjeta se libera y no se toma nada. El equipo de cuidado le dirá por qué y qué consultar con su propio médico.</p></div><div class="faq"><b>¿Mi banco mostrará un cargo?</b><p>Su aplicación bancaria puede mostrar un monto pendiente. Eso es una retención de autorización, no un cargo, y desaparece por sí sola si no la aprueban. El dinero solo se mueve cuando un profesional clínico la aprueba.</p></div><div class="faq"><b>¿Puedo cancelar?</b><p>Cuando quiera, antes de la siguiente renovación, sin llamar a nadie. Cancelar detiene los envíos futuros; no recupera uno que usted ya recibió.</p></div><div class="btn pri">Elegir mi plan</div><div class="legal"><b>Legal copy &#183; do not reword</b>Vellura Triple es un medicamento preparado (compounded) por una farmacia con licencia para un paciente individual. Los medicamentos preparados no están aprobados por la FDA y la FDA no los evalúa en cuanto a seguridad, eficacia ni calidad de fabricación. Los productos con receta se dispensan solo después de la revisión de un profesional clínico con licencia. No todas las personas son candidatas.</div></div></div></div><div class="ann"><h4>Behaviour</h4><dl><dt>Select</dt><dd>n/a. One CTA.</dd><dt>Branch</dt><dd>RECORD-ONLY.</dd><dt>Recorded</dt><dd>Nothing new. Echoes Q-02, Q-03, Q-04, Q-06 back to her verbatim.</dd><dt>Skippable</dt><dd>n/a</dd></dl><h4>Rules</h4><ul><li>Must say in plain words that this is NOT an approval. A results page that reads like an approval and is followed by a decline is the worst experience in the funnel.</li><li>The 90-Day Fit Guarantee appears here and again on C-01.</li></ul><h4>States drawn</h4><ul><li>Default</li></ul><h4>Claims on this screen</h4><ul><li><code>C2</code> <b>LABEL</b> — If you stop, hair returns to the way it was within about eight weeks.<br><span style='color:#8A7F76'>Vaniqa labeling: condition returns to pretreatment state ~8 weeks after discontinuation.</span></li><li><code>C3</code> <b>LABEL</b> — Most people need about eight weeks of twice-daily use before they see a change.<br><span style='color:#8A7F76'>Vaniqa labeling: improvement observed within 8 weeks of twice-daily use.</span></li><li><code>C9</code> <b>PLACEHOLDER</b> — Pricing: $99/mo, $249/3mo, $449/6mo, $25 one-time medical review.<br><span style='color:#8A7F76'>Modelled in deliverable/01-catalog-economics.md against a $150 CAC. Depends on an actual pharmacy quote for the 3-in-1 cream, which the catalog does not price.</span></li></ul></div></div></div></body></html>

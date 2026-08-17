@@ -84,14 +84,14 @@ body{background:#E8E2DC;font-family:var(--font-body);color:var(--ink);
 h2.q{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
   font-weight:700;letter-spacing:-.01em}
 h2.big{font-size:var(--text-2xl)}
-p.help{color:var(--ink-2);font-size:var(--text-sm);margin-top:var(--s2);line-height:1.55}
-p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(--ink-2)}
+p.help{color:var(--ink-2);font-size:var(--text-base);margin-top:var(--s2);line-height:1.55}
+p.body{margin-top:var(--s3);font-size:var(--text-base);line-height:1.65;color:var(--ink-2)}
 .hr{height:1px;background:var(--line);margin:var(--s5) 0}
 
 .opts{display:flex;flex-direction:column;gap:var(--s2);margin-top:var(--s4)}
 .opt{display:flex;align-items:center;gap:var(--s3);padding:14px var(--s4);
   border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--sand);
-  font-size:var(--text-sm);font-weight:500;color:var(--ink)}
+  font-size:var(--text-base);font-weight:500;color:var(--ink)}
 .opt .bx{width:20px;height:20px;border:1.5px solid #B9ABA0;background:#FFF;flex:none}
 .opt.rad .bx{border-radius:50%}
 .opt.chk .bx{border-radius:5px}
@@ -109,7 +109,7 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .fld label{display:block;font-size:var(--text-xs);font-weight:600;letter-spacing:.04em;
   text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
 .fld .in{border:1.5px solid var(--line);border-radius:var(--r-md);background:#FFF;
-  padding:13px var(--s3);font-size:var(--text-sm);color:var(--muted);min-height:46px}
+  padding:13px var(--s3);font-size:var(--text-base);color:var(--muted);min-height:46px}
 .fld .in.filled{color:var(--ink)}
 .fld .in.ta{min-height:88px}
 .fld.err .in{border-color:var(--error);background:var(--error-tint)}
@@ -117,7 +117,7 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .fld .cnt{margin-top:6px;font-size:var(--text-xs);color:var(--muted);text-align:right}
 
 .btn{display:block;width:100%;text-align:center;padding:15px;border-radius:var(--r-pill);
-  font-family:var(--font-body);font-size:var(--text-sm);font-weight:700;letter-spacing:.01em;
+  font-family:var(--font-body);font-size:var(--text-base);font-weight:700;letter-spacing:.01em;
   margin-top:var(--s4)}
 .btn.pri{background:var(--plum);color:#FFFCF9}
 .btn.gho{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
@@ -125,14 +125,14 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .btn.lnk{background:none;color:var(--ink-2);text-decoration:underline;font-weight:500;
   padding:10px;margin-top:var(--s2)}
 
-.note{margin-top:var(--s3);font-size:var(--text-xs);color:var(--muted);line-height:1.55}
+.note{margin-top:var(--s3);font-size:14px;color:var(--muted);line-height:1.55}
 .legal{margin-top:var(--s3);padding:var(--s3);border-left:2px solid var(--disabled);
-  background:#FAF7F4;font-size:var(--text-xs);color:var(--ink-2);line-height:1.55}
+  background:#FAF7F4;font-size:14px;color:var(--ink-2);line-height:1.55}
 .legal b{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
   color:var(--muted);margin-bottom:4px}
 
 .ban{margin-top:var(--s4);padding:var(--s3) var(--s4);border-radius:var(--r-md);
-  font-size:var(--text-sm);line-height:1.55;border:1px solid}
+  font-size:var(--text-base);line-height:1.55;border:1px solid}
 .ban.error{background:var(--error-tint);border-color:var(--error);color:#7E1B15}
 .ban.pause{background:var(--pause-tint);border-color:var(--pause);color:#6A4A11}
 .ban.ok{background:var(--ok-tint);border-color:var(--ok);color:#204C38}
@@ -144,14 +144,14 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .card .ct{padding:var(--s3) var(--s4);background:var(--sand);font-size:var(--text-xs);
   font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
 .card .rw{display:flex;justify-content:space-between;gap:var(--s3);padding:11px var(--s4);
-  border-top:1px solid var(--line);font-size:var(--text-sm)}
+  border-top:1px solid var(--line);font-size:var(--text-base)}
 .card .rw span:first-child{color:var(--ink-2)}
 .card .rw span:last-child{font-weight:600;text-align:right}
 .card .rw.tot{background:var(--sand);font-weight:700}
 .card .rw.tot span{color:var(--ink)}
 
 .ticks{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
-.tick{display:flex;gap:var(--s3);font-size:var(--text-sm);line-height:1.5}
+.tick{display:flex;gap:var(--s3);font-size:var(--text-base);line-height:1.5}
 .tick b{color:var(--ok);flex:none;font-size:1rem;line-height:1.3}
 
 .plan{border:1.5px solid var(--line);border-radius:var(--r-md);padding:var(--s4);
@@ -179,6 +179,24 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .steplab{padding:8px var(--s4) 0;font-size:var(--text-xs);color:var(--muted);font-weight:600;
   letter-spacing:.06em;text-transform:uppercase}
 
+
+/* A5: reserved regions. Deliberately empty and loudly marked, because the one thing we
+   must never do is fill them with invented quotes or an invented clinician. */
+.slot{margin-top:var(--s4);border:1.5px dashed var(--disabled);border-radius:var(--r-md);
+  background:#FAF7F4;padding:var(--s4);text-align:center}
+.slot .lab{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#B3261E;margin-bottom:6px}
+.slot .desc{font-size:14px;color:var(--muted);line-height:1.5}
+.slot .box{height:64px;border-radius:8px;background:#EFE9E3;margin-top:10px}
+
+/* A7: checkout trust row. CSS marks only, no third-party logo files. */
+.trust{margin-top:var(--s4);display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  justify-content:center}
+.trust span{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:#FFF}
+.trust .sec{border-color:var(--ok);color:var(--ok)}
+
+.plan .unit{font-size:14px;color:var(--ink-2);font-weight:600;margin-top:2px}
 .claim{border-bottom:1.5px dotted var(--clay)}
 .claim sup{font-size:.55rem;font-weight:700;color:var(--clay);vertical-align:super;
   margin-left:1px;letter-spacing:.02em}
@@ -189,8 +207,8 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .sect h3{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
   margin-bottom:var(--s2)}
 .faq{border-top:1px solid var(--line);padding:var(--s3) 0}
-.faq b{display:block;font-size:var(--text-sm);font-weight:600;margin-bottom:5px}
-.faq p{font-size:var(--text-sm);color:var(--ink-2);line-height:1.6}
+.faq b{display:block;font-size:var(--text-base);font-weight:600;margin-bottom:5px}
+.faq p{font-size:var(--text-base);color:var(--ink-2);line-height:1.6}
 
 /* ---- annotation panel ---- */
 .ann{width:380px;background:#FFFDFB;border:1px solid #CFC6BE;border-radius:12px;
@@ -209,4 +227,8 @@ p.body{margin-top:var(--s3);font-size:var(--text-sm);line-height:1.65;color:var(
 .k.br{background:#E6DCE2;color:#6B3A4E}
 .k.rec{background:#DFE7E2;color:#2E6B4F}
 .k.stop{background:#FBECEB;color:#B3261E}
+/* Amber badges. A pause, a soft stop and a soft branch are NOT final states and must
+   never carry the red token. Same rule the screens and the tree already follow. */
+.k.pause{background:#FBF3E3;color:#8A6116}
+.k.soft{background:#FBF3E3;color:#8A6116}
 </style></head><body><div class="board-h"><h1>Q-08 — Diagnosed condition</h1><div class="sub">Single screen, EN and ES, with its behaviour spec.</div></div><div class="stage"><div class="row"><div class="unit"><div class="code"><b>Q-08</b><span>Diagnosed condition</span></div><div class="frame"><div class="bar"><div class="bk">&#8592;</div><div class="wm">Vellura</div><div class="ct">8 of 18</div></div><div class="prog"><i style="width:44%"></i></div><div class="pad"><div class="eyebrow">Medical</div><h2 class="q">Have you been diagnosed with a hormone condition?</h2><div class="opts"><div class="opt rad"><div class="bx"></div>Yes, PCOS</div><div class="opt rad"><div class="bx"></div>Yes, a thyroid condition</div><div class="opt rad"><div class="bx"></div>Yes, something else</div><div class="opt rad"><div class="bx"></div>No</div><div class="opt rad"><div class="bx"></div>I am not sure</div></div></div></div></div><div class="unit"><div class="code"><b>Q-08·ES</b><span>Diagnosed condition</span><i class="v">ES</i></div><div class="frame"><div class="bar"><div class="bk">&#8592;</div><div class="wm">Vellura</div><div class="ct">8 de 18</div></div><div class="prog"><i style="width:44%"></i></div><div class="pad"><div class="eyebrow">Médico</div><h2 class="q">¿Le han diagnosticado alguna condición hormonal?</h2><div class="opts"><div class="opt rad"><div class="bx"></div>Sí, SOP</div><div class="opt rad"><div class="bx"></div>Sí, una condición de tiroides</div><div class="opt rad"><div class="bx"></div>Sí, otra cosa</div><div class="opt rad"><div class="bx"></div>No</div><div class="opt rad"><div class="bx"></div>No estoy segura</div></div></div></div></div><div class="ann"><h4>Behaviour</h4><dl><dt>Select</dt><dd>SINGLE. Advances on tap.</dd><dt>Branch</dt><dd>RECORD-ONLY.</dd><dt>Recorded</dt><dd>Diagnosed hormone condition.</dd><dt>Skippable</dt><dd>Not skippable. &#x27;I am not sure&#x27; is a valid answer.</dd></dl><h4>States drawn</h4><ul><li>Default</li></ul></div></div></div></body></html>
