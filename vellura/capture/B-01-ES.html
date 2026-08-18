@@ -1,0 +1,234 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>B-01-ES</title><link href="https://api.fontshare.com/v2/css?f[]=sentient@400,500,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet"><style>:root{
+  --ink:#24201D;
+  --ink-2:#5A514A;
+  --muted:#8A7F76;
+  --cream:#FFFCF9;
+  --sand:#F6F0EA;
+  --line:#E5DAD0;
+  --plum:#6B3A4E;
+  --plum-press:#542C3C;
+  --plum-tint:#F2E8EC;
+  --clay:#C97B5E;
+  --error:#B3261E;
+  --error-tint:#FBECEB;
+  --pause:#8A6116;
+  --pause-tint:#FBF3E3;
+  --ok:#2E6B4F;
+  --ok-tint:#EAF2ED;
+  --disabled:#CFC6BE;
+  --disabled-bg:#F2EEEA;
+  --text-xs:0.694rem;
+  --text-sm:0.833rem;
+  --text-base:1rem;
+  --text-lg:1.200rem;
+  --text-xl:1.440rem;
+  --text-2xl:1.728rem;
+  --text-3xl:2.074rem;
+  --text-4xl:2.488rem;
+  --s1:4px;
+  --s2:8px;
+  --s3:12px;
+  --s4:16px;
+  --s5:24px;
+  --s6:32px;
+  --s7:48px;
+  --s8:64px;
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:16px;
+  --r-pill:999px;
+  --font-heading:'Sentient',Georgia,serif;
+  --font-body:'General Sans',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#FFFFFF;font-family:var(--font-body);color:var(--ink);
+     -webkit-font-smoothing:antialiased;padding:24px 24px 48px}
+
+/* ---- board furniture (NOT part of the product UI) ---- */
+.board-h{max-width:1600px;margin:0 auto 40px}
+.board-h h1{font-family:var(--font-heading);font-size:2.4rem;letter-spacing:-.02em}
+.board-h .sub{color:#5A514A;margin-top:8px;font-size:.95rem;max-width:70ch;line-height:1.6}
+.stage{max-width:1600px;margin:0 auto}
+.stage-t{font-family:var(--font-body);font-size:.72rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:#6B625B;margin:56px 0 6px;padding-bottom:8px;
+  border-bottom:1px solid #CFC6BE}
+.stage-d{font-size:.85rem;color:#6B625B;margin-bottom:24px;max-width:80ch;line-height:1.6}
+.row{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+
+/* ---- the phone frame ---- */
+.unit{display:flex;flex-direction:column;gap:8px}
+.code{display:flex;align-items:center;gap:8px}
+.code b{font-family:var(--font-body);font-size:.7rem;font-weight:700;letter-spacing:.1em;
+  background:var(--ink);color:#FFFCF9;padding:4px 9px;border-radius:4px}
+.code span{font-size:.72rem;color:#6B625B;font-weight:500}
+.code i{font-style:normal;font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:3px 7px;border-radius:4px;background:#DCD3CB;color:#4A423C}
+.code i.v{background:#E6DCE2;color:#6B3A4E}
+
+.frame{width:390px;background:var(--cream);border:1px solid #CFC6BE;border-radius:20px;
+  overflow:hidden;font-size:var(--text-base);line-height:1.6}
+.pad{padding:var(--s5) var(--s4)}
+
+/* ---- product UI components ---- */
+.bar{height:44px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--s4);border-bottom:1px solid var(--line)}
+.bar .bk{font-size:1.1rem;color:var(--ink-2);width:24px}
+.bar .wm{font-family:var(--font-heading);font-size:1rem;letter-spacing:.02em}
+.bar .ct{font-size:var(--text-xs);color:var(--muted);width:44px;text-align:right}
+
+.prog{height:4px;background:var(--sand)}
+.prog i{display:block;height:100%;background:var(--plum)}
+
+.eyebrow{font-size:var(--text-xs);font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay);margin-bottom:var(--s2)}
+h2.q{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
+  font-weight:700;letter-spacing:-.01em}
+h2.big{font-size:var(--text-2xl)}
+p.help{color:var(--ink-2);font-size:var(--text-base);margin-top:var(--s2);line-height:1.55}
+p.body{margin-top:var(--s3);font-size:var(--text-base);line-height:1.65;color:var(--ink-2)}
+.hr{height:1px;background:var(--line);margin:var(--s5) 0}
+
+.opts{display:flex;flex-direction:column;gap:var(--s2);margin-top:var(--s4)}
+.opt{display:flex;align-items:center;gap:var(--s3);padding:14px var(--s4);
+  border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--sand);
+  font-size:var(--text-base);font-weight:500;color:var(--ink)}
+.opt .bx{width:20px;height:20px;border:1.5px solid #B9ABA0;background:#FFF;flex:none}
+.opt.rad .bx{border-radius:50%}
+.opt.chk .bx{border-radius:5px}
+.opt.sel{border-color:var(--plum);background:var(--plum-tint);color:var(--plum)}
+.opt.sel .bx{border-color:var(--plum);background:var(--plum);position:relative}
+.opt.sel .bx:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+  border:solid #FFF;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.opt.sel.rad .bx:after{left:5px;top:5px;width:8px;height:8px;border:0;border-radius:50%;
+  background:#FFF;transform:none}
+.opt.dis{border-color:var(--disabled);background:var(--disabled-bg);color:var(--disabled)}
+.opt.dis .bx{border-color:var(--disabled);background:var(--disabled-bg)}
+.opt .tail{margin-left:auto;font-size:var(--text-xs);color:var(--muted);font-weight:500}
+
+.fld{margin-top:var(--s4)}
+.fld label{display:block;font-size:var(--text-xs);font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
+.fld .in{border:1.5px solid var(--line);border-radius:var(--r-md);background:#FFF;
+  padding:13px var(--s3);font-size:var(--text-base);color:var(--muted);min-height:46px}
+.fld .in.filled{color:var(--ink)}
+.fld .in.ta{min-height:88px}
+.fld.err .in{border-color:var(--error);background:var(--error-tint)}
+.fld .msg{margin-top:6px;font-size:var(--text-xs);color:var(--error);font-weight:600}
+.fld .cnt{margin-top:6px;font-size:var(--text-xs);color:var(--muted);text-align:right}
+
+.btn{display:block;width:100%;text-align:center;padding:15px;border-radius:var(--r-pill);
+  font-family:var(--font-body);font-size:var(--text-base);font-weight:700;letter-spacing:.01em;
+  margin-top:var(--s4)}
+.btn.pri{background:var(--plum);color:#FFFCF9}
+.btn.gho{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
+.btn.dis{background:var(--disabled-bg);color:var(--disabled);border:1.5px solid var(--disabled)}
+.btn.lnk{background:none;color:var(--ink-2);text-decoration:underline;font-weight:500;
+  padding:10px;margin-top:var(--s2)}
+
+.note{margin-top:var(--s3);font-size:14px;color:var(--muted);line-height:1.55}
+.legal{margin-top:var(--s3);padding:var(--s3);border-left:2px solid var(--disabled);
+  background:#FAF7F4;font-size:14px;color:var(--ink-2);line-height:1.55}
+.legal b{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px}
+
+.ban{margin-top:var(--s4);padding:var(--s3) var(--s4);border-radius:var(--r-md);
+  font-size:var(--text-base);line-height:1.55;border:1px solid}
+.ban.error{background:var(--error-tint);border-color:var(--error);color:#7E1B15}
+.ban.pause{background:var(--pause-tint);border-color:var(--pause);color:#6A4A11}
+.ban.ok{background:var(--ok-tint);border-color:var(--ok);color:#204C38}
+.ban.info{background:var(--sand);border-color:var(--line);color:var(--ink-2)}
+.ban b{display:block;margin-bottom:3px;font-weight:700}
+
+.card{margin-top:var(--s4);border:1px solid var(--line);border-radius:var(--r-md);
+  background:#FFF;overflow:hidden}
+.card .ct{padding:var(--s3) var(--s4);background:var(--sand);font-size:var(--text-xs);
+  font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.card .rw{display:flex;justify-content:space-between;gap:var(--s3);padding:11px var(--s4);
+  border-top:1px solid var(--line);font-size:var(--text-base)}
+.card .rw span:first-child{color:var(--ink-2)}
+.card .rw span:last-child{font-weight:600;text-align:right}
+.card .rw.tot{background:var(--sand);font-weight:700}
+.card .rw.tot span{color:var(--ink)}
+
+.ticks{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.tick{display:flex;gap:var(--s3);font-size:var(--text-base);line-height:1.5}
+.tick b{color:var(--ok);flex:none;font-size:1rem;line-height:1.3}
+
+.plan{border:1.5px solid var(--line);border-radius:var(--r-md);padding:var(--s4);
+  background:var(--sand);margin-top:var(--s3)}
+.plan.sel{border-color:var(--plum);background:var(--plum-tint)}
+.plan .top{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s2)}
+.plan .nm{font-family:var(--font-heading);font-size:var(--text-lg);font-weight:700}
+.plan .pr{font-weight:700;font-size:var(--text-lg)}
+.plan .sub{font-size:var(--text-xs);color:var(--ink-2);margin-top:4px;line-height:1.5}
+.plan .tag{display:inline-block;margin-top:var(--s2);font-size:.6rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;background:var(--clay);color:#FFF;
+  padding:3px 8px;border-radius:4px}
+
+.img{margin-top:var(--s4);border-radius:var(--r-md);overflow:hidden;position:relative;
+  background:var(--sand);border:1px solid var(--line)}
+.img img{display:block;width:100%;height:auto}
+.img .st{position:absolute;left:8px;top:8px;font-size:.58rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:4px;
+  background:rgba(36,32,29,.86);color:#FFFCF9}
+.img .st.standin{background:rgba(179,38,30,.9)}
+
+.steps{display:flex;gap:6px;padding:var(--s3) var(--s4) 0}
+.steps div{flex:1;height:3px;border-radius:2px;background:var(--line)}
+.steps div.on{background:var(--plum)}
+.steplab{padding:8px var(--s4) 0;font-size:var(--text-xs);color:var(--muted);font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase}
+
+
+/* A5: reserved regions. Deliberately empty and loudly marked, because the one thing we
+   must never do is fill them with invented quotes or an invented clinician. */
+.slot{margin-top:var(--s4);border:1.5px dashed var(--disabled);border-radius:var(--r-md);
+  background:#FAF7F4;padding:var(--s4);text-align:center}
+.slot .lab{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#B3261E;margin-bottom:6px}
+.slot .desc{font-size:14px;color:var(--muted);line-height:1.5}
+.slot .box{height:64px;border-radius:8px;background:#EFE9E3;margin-top:10px}
+
+/* A7: checkout trust row. CSS marks only, no third-party logo files. */
+.trust{margin-top:var(--s4);display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  justify-content:center}
+.trust span{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:#FFF}
+.trust .sec{border-color:var(--ok);color:var(--ok)}
+
+.plan .unit{font-size:14px;color:var(--ink-2);font-weight:600;margin-top:2px}
+.claim{border-bottom:1.5px dotted var(--clay)}
+.claim sup{font-size:.55rem;font-weight:700;color:var(--clay);vertical-align:super;
+  margin-left:1px;letter-spacing:.02em}
+.ph{background:#FFF6D6;border-bottom:1.5px dotted #B8912A;padding:0 2px}
+
+.sect{padding:var(--s6) var(--s4);border-top:1px solid var(--line)}
+.sect.alt{background:var(--sand)}
+.sect h3{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
+  margin-bottom:var(--s2)}
+.faq{border-top:1px solid var(--line);padding:var(--s3) 0}
+.faq b{display:block;font-size:var(--text-base);font-weight:600;margin-bottom:5px}
+.faq p{font-size:var(--text-base);color:var(--ink-2);line-height:1.6}
+
+/* ---- annotation panel ---- */
+.ann{width:380px;background:#FFFDFB;border:1px solid #CFC6BE;border-radius:12px;
+  padding:18px 20px;font-size:.78rem;line-height:1.6;color:#3A332E}
+.ann h4{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:#8A7F76;margin:16px 0 6px;padding-top:12px;border-top:1px solid #EAE2DA}
+.ann h4:first-child{margin-top:0;padding-top:0;border-top:0}
+.ann dl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
+.ann dt{font-weight:700;color:#6B625B;white-space:nowrap}
+.ann ul{margin:0;padding-left:16px}
+.ann li{margin-bottom:3px}
+.ann code{background:#F2EDE8;padding:1px 5px;border-radius:3px;font-size:.72rem;
+  font-family:ui-monospace,Menlo,monospace}
+.ann .k{display:inline-block;font-size:.58rem;font-weight:700;letter-spacing:.06em;
+  padding:2px 6px;border-radius:3px;margin-right:4px}
+.k.br{background:#E6DCE2;color:#6B3A4E}
+.k.rec{background:#DFE7E2;color:#2E6B4F}
+.k.stop{background:#FBECEB;color:#B3261E}
+/* Amber badges. A pause, a soft stop and a soft branch are NOT final states and must
+   never carry the red token. Same rule the screens and the tree already follow. */
+.k.pause{background:#FBF3E3;color:#8A6116}
+.k.soft{background:#FBF3E3;color:#8A6116}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#FFFFFF;padding:0;width:390px}.unit{width:390px}.frame{border:0;border-radius:0}</style></head><body><div class="unit"><div class="code"><b>B-01·ES</b><span>Landing page</span><i class="v">ES</i></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct"></div></div><div class="pad"><div class="eyebrow">Tratamiento con receta para vello facial · SOP y vello hormonal</div><h2 class="q big">Deje de organizar su semana alrededor de esto.</h2><p class="help">Quitarlo más rápido no es lo mismo que hacer que crezca más lento. La cera, el hilo y las pinzas tratan el vello que ya se ve. Vellura Triple es una crema con receta, preparada para usted, que actúa sobre el folículo que está debajo, hecha para el vello facial hormonal y el patrón de SOP que suele causarlo. Revisada por un profesional clínico con licencia. Enviada a su puerta.</p><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/product-tube.png" alt="Unbranded cream tube stand-in for the Vellura Triple pack shot"></div><div class="btn pri">Vea si califica — 2 minutos</div><p class="note">Empezar no tiene costo. Solo se le cobra si un profesional clínico la aprueba.</p><div class="slot"><div class="lab">Reservado — Director Médico. No llenar.</div><div class="desc">Profesional clínico con nombre, foto, credenciales y licencia estatal. Permanece vacío hasta que se firme la red clínica.</div><div class="box"></div></div><div class="sect alt"><div class="eyebrow">¿Le suena familiar?</div><h2 class="q">Tiene una rutina que nunca eligió.</h2><p class="body">Pinzas en el bolso, en la mochila del trabajo, en el carro de su mamá. Las luces apagadas, porque no quiere que la sientan tanto como que la vean. Algunas mañanas se levanta antes que todos en la casa, y no porque quisiera.</p><p class="body">En promedio son <span class="claim">104 minutos por semana<sup>C11</sup></span>. <span class="claim">Dos de cada tres mujeres se revisan en el espejo de forma compulsiva<sup>C12</sup></span>, y <span class="claim">tres de cada cuatro reportan ansiedad de nivel clínico<sup>C13</sup></span>. Ese es el costo de la rutina, y casi nadie lo suma.</p><p class="body">Nadie organiza su vida alrededor de un vello en la barbilla a propósito. Simplemente pasa, un pequeño ajuste a la vez.</p></div><div class="sect"><div class="eyebrow">Por qué sigue volviendo</div><h2 class="q">Su cuerpo envía tres señales para que ese vello crezca.</h2><p class="body"><span class="claim">Una señal enzimática, una señal hormonal y una señal de insulina.<sup>C19</sup></span> La cera elimina el resultado de las tres. Todo lo que le han vendido hasta ahora bloquea una, como mucho.</p><p class="body">La cera y el hilo arrancan el vello. La afeitada lo corta en la superficie. Los tres dejan el folículo tal como lo encontraron, y por eso el reloj se reinicia en cuanto usted termina. <span class="claim">El láser actúa sobre folículos que ya se activaron, y en el SOP puede provocar que vuelva a crecer en zonas que estaban limpias.<sup>C16</sup></span></p><p class="body">Vellura Triple se aplica sobre la piel, no sobre el vello, y está hecha para responder a las tres señales a la vez. Su ingrediente principal es la eflornitina, que se usa para <span class="claim">reducir la velocidad del crecimiento del vello facial<sup>C1</sup></span>.</p><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/hands-cream.png" alt="Hands dispensing cream, application step stand-in"></div></div><div class="sect"><div class="slot"><div class="lab">Reservado — prueba social. No llenar.</div><div class="desc">Reseñas reales con consentimiento, o nada. Sin citas inventadas, sin conteos inventados, sin rostros de banco de imágenes.</div></div></div><div class="sect alt"><div class="eyebrow">Qué contiene</div><h2 class="q">Tres activos en una sola crema.</h2><div class="card"><div class="ct">Vellura Triple — preparada</div><div class="rw"><span>Eflornitina 12%</span><span>La señal enzimática</span></div><div class="rw"><span>Ácido azelaico 5%</span><span>La señal hormonal</span></div><div class="rw"><span>Metformina 5%</span><span>La señal de insulina</span></div></div><p class="note"><span class="claim">La eflornitina frena la división celular del folículo. El ácido azelaico actúa sobre la conversión de testosterona que ocurre en la propia piel. La metformina aborda la señal de insulina que impulsa la producción de andrógenos en el SOP.<sup>C19</sup></span> Una crema, tres señales, dos veces al día.</p></div><div class="sect"><div class="eyebrow">Cómo funciona</div><h2 class="q">Cuatro pasos. Sin sala de espera.</h2><div class="ticks"><div class="tick"><b>&#10003;</b><div>Complete el cuestionario. Unos dos minutos.</div></div><div class="tick"><b>&#10003;</b><div>Un profesional clínico con licencia revisa sus respuestas. <span class="claim">En menos de <span class="ph">24 horas</span>.<sup>C8</sup></span></div></div><div class="tick"><b>&#10003;</b><div>Si se aprueba, una farmacia con licencia prepara su crema.</div></div><div class="tick"><b>&#10003;</b><div>Se le envía. Su tarjeta se cobra solo al momento de la aprobación.</div></div></div><div class="img"><span class="st standin">STAND-IN</span><img src="../pictures/pharmacy.png" alt="Compounding pharmacy bench stand-in"></div></div><div class="sect alt"><div class="eyebrow">Antes de empezar</div><h2 class="q">Dos cosas que preferimos decirle ahora.</h2><p class="body">Primero, esto no es rápido. <span class="claim">La mayoría necesita unas ocho semanas de uso dos veces al día antes de notar un cambio.<sup>C3</sup></span> En los estudios detrás de la etiqueta de la eflornitina, <span class="claim">el 32% vio una mejoría marcada a las 24 semanas frente al 8% con la base de la crema sola.<sup>C14</sup></span> Es un efecto real y no le ocurre a todas. Si busca un resultado para el fin de semana, este no es el producto.</p><p class="body">Segundo, funciona mientras usted lo usa. <span class="claim">Si lo suspende, el vello vuelve a como estaba en unas ocho semanas.<sup>C2</sup></span> Esto es mantenimiento, no una cura, y preferimos que lo sepa antes de pagar y no después.</p></div><div class="sect"><div class="eyebrow">Precios</div><h2 class="q">Elija su suministro después de ser aprobada.</h2><p class="body">Antes de los números: <span class="claim">la mayoría de las mujeres en esta situación ya gasta entre $40 y $70 al mes<sup>C18</sup></span> en cera, hilo, rastrillos y corrector, y <span class="claim">solo la cera cuesta entre $30 y $60 por sesión cada dos a cuatro semanas.<sup>C20</sup></span> Esto es un El plan de 6 meses queda en $96.33.17 al mes, así que esto se parece más a un cambio dentro de su presupuesto que a un gasto nuevo.</p><div class="ban ok"><b>La Garantía de Ajuste de 90 Días</b>Úsela dos veces al día según las indicaciones durante 90 días. Si no ve ningún cambio, le reembolsamos un mes: $119 en el plan mensual, $96.33 en el de 3 meses, $83.17 en el de 6 meses. Sin registros diarios para mantenerla válida, sin trámites. Es la única garantía de esta categoría que usted no puede anular sin querer.</div><div class="plan"><div class="top"><div class="nm">Mensual</div><div class="pr">$119/mes</div></div><div class="sub">20g se envía cada mes. Facturación mensual. Cancele cuando quiera.</div></div><div class="plan sel"><div class="top"><div class="nm">3 meses</div><div class="pr">$289</div></div><div class="sub">Ahorre $68 frente a pagar mes a mes. Un envío, un pago.</div><div class="tag">Recomendado</div></div><div class="plan"><div class="top"><div class="nm">6 meses</div><div class="pr">$499</div></div><div class="sub">Ahorre $215. Dos envíos. El menor costo por mes.</div></div><p class="note">Se aplica una tarifa única de $25 por revisión médica en su primer pedido. <span class="claim">Los precios mostrados son los vigentes.<sup>C9</sup></span></p></div><div class="sect alt"><div class="eyebrow">Preguntas</div><div class="faq"><b>He probado de todo y nada funciona.</b><p>Todo lo que ha probado actúa sobre el vello después de que creció. Esto actúa sobre las tres señales que le dicen que crezca. Es un problema distinto, así que necesita una herramienta distinta. Por eso también es lento: está cambiando lo que hace el folículo, no quitando lo que ya produjo.</p></div><div class="faq"><b>¿Y si no me funciona?</b><p>Úsela según las indicaciones durante 90 días. Si no ve ningún cambio, escriba al equipo de cuidado y le reembolsamos un mes: $119 en el mensual, $96.33 en el de 3 meses, $83.17 en el de 6 meses. No hay registros diarios que se le puedan pasar ni letra pequeña que la anule.</p></div><div class="faq"><b>Es caro.</b><p>Frente a lo que ya gasta, es un paso arriba en el plan mensual y queda casi igual en el de 6 meses, y <span class="claim">los mismos tres activos se venden en otro lugar desde $119 al mes.<sup>C17</sup></span> Los planes de 3 y 6 meses lo dejan en $96.33 y $96.33.17 al mes. Además, no se le cobra nada a menos que un profesional clínico la apruebe.</p></div><div class="faq"><b>¿Es lo mismo que Vaniqa?</b><p>No. Vaniqa es un producto aprobado por la FDA con un solo ingrediente. Vellura Triple es una crema preparada con tres activos, hecha para usted por una farmacia con licencia, y no está aprobada por la FDA.</p></div><div class="faq"><b>¿Funciona en toda la cara?</b><p>Se aplica en las áreas que usted y su profesional clínico acuerden. 20g cubren el labio superior y la barbilla por alrededor de un mes. Si necesita un área mayor, hay una opción de suministro doble al pagar.</p></div><div class="faq"><b>¿Puedo seguir depilándome?</b><p>Pregunte a su profesional clínico. Muchas personas siguen quitándose el vello mientras la crema actúa, y la meta es que la remoción sea menos frecuente con el tiempo.</p></div><div class="faq"><b>¿Y si no me aprueban?</b><p>No se le cobra. La retención en su tarjeta se libera.</p></div></div><div class="sect"><h2 class="q big">El cuestionario toma unos dos minutos.</h2><p class="body">Responderá preguntas sobre el vello y luego una sección médica breve que el profesional clínico necesita. Puede detenerse en cualquier momento. No se cobra nada hasta que sea aprobada.</p><div class="btn pri">Comenzar el cuestionario</div><div class="legal"><b>Legal copy &#183; do not reword</b>Vellura Triple es un medicamento preparado (compounded) por una farmacia con licencia para un paciente individual. Los medicamentos preparados no están aprobados por la FDA y la FDA no los evalúa en cuanto a seguridad, eficacia ni calidad de fabricación. Los productos con receta se dispensan solo después de la revisión de un profesional clínico con licencia. No todas las personas son candidatas.</div></div></div></div></div></body></html>

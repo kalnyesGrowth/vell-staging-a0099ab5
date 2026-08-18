@@ -1,0 +1,234 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>C-03</title><link href="https://api.fontshare.com/v2/css?f[]=sentient@400,500,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet"><style>:root{
+  --ink:#24201D;
+  --ink-2:#5A514A;
+  --muted:#8A7F76;
+  --cream:#FFFCF9;
+  --sand:#F6F0EA;
+  --line:#E5DAD0;
+  --plum:#6B3A4E;
+  --plum-press:#542C3C;
+  --plum-tint:#F2E8EC;
+  --clay:#C97B5E;
+  --error:#B3261E;
+  --error-tint:#FBECEB;
+  --pause:#8A6116;
+  --pause-tint:#FBF3E3;
+  --ok:#2E6B4F;
+  --ok-tint:#EAF2ED;
+  --disabled:#CFC6BE;
+  --disabled-bg:#F2EEEA;
+  --text-xs:0.694rem;
+  --text-sm:0.833rem;
+  --text-base:1rem;
+  --text-lg:1.200rem;
+  --text-xl:1.440rem;
+  --text-2xl:1.728rem;
+  --text-3xl:2.074rem;
+  --text-4xl:2.488rem;
+  --s1:4px;
+  --s2:8px;
+  --s3:12px;
+  --s4:16px;
+  --s5:24px;
+  --s6:32px;
+  --s7:48px;
+  --s8:64px;
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:16px;
+  --r-pill:999px;
+  --font-heading:'Sentient',Georgia,serif;
+  --font-body:'General Sans',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#FFFFFF;font-family:var(--font-body);color:var(--ink);
+     -webkit-font-smoothing:antialiased;padding:24px 24px 48px}
+
+/* ---- board furniture (NOT part of the product UI) ---- */
+.board-h{max-width:1600px;margin:0 auto 40px}
+.board-h h1{font-family:var(--font-heading);font-size:2.4rem;letter-spacing:-.02em}
+.board-h .sub{color:#5A514A;margin-top:8px;font-size:.95rem;max-width:70ch;line-height:1.6}
+.stage{max-width:1600px;margin:0 auto}
+.stage-t{font-family:var(--font-body);font-size:.72rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:#6B625B;margin:56px 0 6px;padding-bottom:8px;
+  border-bottom:1px solid #CFC6BE}
+.stage-d{font-size:.85rem;color:#6B625B;margin-bottom:24px;max-width:80ch;line-height:1.6}
+.row{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+
+/* ---- the phone frame ---- */
+.unit{display:flex;flex-direction:column;gap:8px}
+.code{display:flex;align-items:center;gap:8px}
+.code b{font-family:var(--font-body);font-size:.7rem;font-weight:700;letter-spacing:.1em;
+  background:var(--ink);color:#FFFCF9;padding:4px 9px;border-radius:4px}
+.code span{font-size:.72rem;color:#6B625B;font-weight:500}
+.code i{font-style:normal;font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:3px 7px;border-radius:4px;background:#DCD3CB;color:#4A423C}
+.code i.v{background:#E6DCE2;color:#6B3A4E}
+
+.frame{width:390px;background:var(--cream);border:1px solid #CFC6BE;border-radius:20px;
+  overflow:hidden;font-size:var(--text-base);line-height:1.6}
+.pad{padding:var(--s5) var(--s4)}
+
+/* ---- product UI components ---- */
+.bar{height:44px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--s4);border-bottom:1px solid var(--line)}
+.bar .bk{font-size:1.1rem;color:var(--ink-2);width:24px}
+.bar .wm{font-family:var(--font-heading);font-size:1rem;letter-spacing:.02em}
+.bar .ct{font-size:var(--text-xs);color:var(--muted);width:44px;text-align:right}
+
+.prog{height:4px;background:var(--sand)}
+.prog i{display:block;height:100%;background:var(--plum)}
+
+.eyebrow{font-size:var(--text-xs);font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay);margin-bottom:var(--s2)}
+h2.q{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
+  font-weight:700;letter-spacing:-.01em}
+h2.big{font-size:var(--text-2xl)}
+p.help{color:var(--ink-2);font-size:var(--text-base);margin-top:var(--s2);line-height:1.55}
+p.body{margin-top:var(--s3);font-size:var(--text-base);line-height:1.65;color:var(--ink-2)}
+.hr{height:1px;background:var(--line);margin:var(--s5) 0}
+
+.opts{display:flex;flex-direction:column;gap:var(--s2);margin-top:var(--s4)}
+.opt{display:flex;align-items:center;gap:var(--s3);padding:14px var(--s4);
+  border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--sand);
+  font-size:var(--text-base);font-weight:500;color:var(--ink)}
+.opt .bx{width:20px;height:20px;border:1.5px solid #B9ABA0;background:#FFF;flex:none}
+.opt.rad .bx{border-radius:50%}
+.opt.chk .bx{border-radius:5px}
+.opt.sel{border-color:var(--plum);background:var(--plum-tint);color:var(--plum)}
+.opt.sel .bx{border-color:var(--plum);background:var(--plum);position:relative}
+.opt.sel .bx:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+  border:solid #FFF;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.opt.sel.rad .bx:after{left:5px;top:5px;width:8px;height:8px;border:0;border-radius:50%;
+  background:#FFF;transform:none}
+.opt.dis{border-color:var(--disabled);background:var(--disabled-bg);color:var(--disabled)}
+.opt.dis .bx{border-color:var(--disabled);background:var(--disabled-bg)}
+.opt .tail{margin-left:auto;font-size:var(--text-xs);color:var(--muted);font-weight:500}
+
+.fld{margin-top:var(--s4)}
+.fld label{display:block;font-size:var(--text-xs);font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
+.fld .in{border:1.5px solid var(--line);border-radius:var(--r-md);background:#FFF;
+  padding:13px var(--s3);font-size:var(--text-base);color:var(--muted);min-height:46px}
+.fld .in.filled{color:var(--ink)}
+.fld .in.ta{min-height:88px}
+.fld.err .in{border-color:var(--error);background:var(--error-tint)}
+.fld .msg{margin-top:6px;font-size:var(--text-xs);color:var(--error);font-weight:600}
+.fld .cnt{margin-top:6px;font-size:var(--text-xs);color:var(--muted);text-align:right}
+
+.btn{display:block;width:100%;text-align:center;padding:15px;border-radius:var(--r-pill);
+  font-family:var(--font-body);font-size:var(--text-base);font-weight:700;letter-spacing:.01em;
+  margin-top:var(--s4)}
+.btn.pri{background:var(--plum);color:#FFFCF9}
+.btn.gho{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
+.btn.dis{background:var(--disabled-bg);color:var(--disabled);border:1.5px solid var(--disabled)}
+.btn.lnk{background:none;color:var(--ink-2);text-decoration:underline;font-weight:500;
+  padding:10px;margin-top:var(--s2)}
+
+.note{margin-top:var(--s3);font-size:14px;color:var(--muted);line-height:1.55}
+.legal{margin-top:var(--s3);padding:var(--s3);border-left:2px solid var(--disabled);
+  background:#FAF7F4;font-size:14px;color:var(--ink-2);line-height:1.55}
+.legal b{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px}
+
+.ban{margin-top:var(--s4);padding:var(--s3) var(--s4);border-radius:var(--r-md);
+  font-size:var(--text-base);line-height:1.55;border:1px solid}
+.ban.error{background:var(--error-tint);border-color:var(--error);color:#7E1B15}
+.ban.pause{background:var(--pause-tint);border-color:var(--pause);color:#6A4A11}
+.ban.ok{background:var(--ok-tint);border-color:var(--ok);color:#204C38}
+.ban.info{background:var(--sand);border-color:var(--line);color:var(--ink-2)}
+.ban b{display:block;margin-bottom:3px;font-weight:700}
+
+.card{margin-top:var(--s4);border:1px solid var(--line);border-radius:var(--r-md);
+  background:#FFF;overflow:hidden}
+.card .ct{padding:var(--s3) var(--s4);background:var(--sand);font-size:var(--text-xs);
+  font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.card .rw{display:flex;justify-content:space-between;gap:var(--s3);padding:11px var(--s4);
+  border-top:1px solid var(--line);font-size:var(--text-base)}
+.card .rw span:first-child{color:var(--ink-2)}
+.card .rw span:last-child{font-weight:600;text-align:right}
+.card .rw.tot{background:var(--sand);font-weight:700}
+.card .rw.tot span{color:var(--ink)}
+
+.ticks{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.tick{display:flex;gap:var(--s3);font-size:var(--text-base);line-height:1.5}
+.tick b{color:var(--ok);flex:none;font-size:1rem;line-height:1.3}
+
+.plan{border:1.5px solid var(--line);border-radius:var(--r-md);padding:var(--s4);
+  background:var(--sand);margin-top:var(--s3)}
+.plan.sel{border-color:var(--plum);background:var(--plum-tint)}
+.plan .top{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s2)}
+.plan .nm{font-family:var(--font-heading);font-size:var(--text-lg);font-weight:700}
+.plan .pr{font-weight:700;font-size:var(--text-lg)}
+.plan .sub{font-size:var(--text-xs);color:var(--ink-2);margin-top:4px;line-height:1.5}
+.plan .tag{display:inline-block;margin-top:var(--s2);font-size:.6rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;background:var(--clay);color:#FFF;
+  padding:3px 8px;border-radius:4px}
+
+.img{margin-top:var(--s4);border-radius:var(--r-md);overflow:hidden;position:relative;
+  background:var(--sand);border:1px solid var(--line)}
+.img img{display:block;width:100%;height:auto}
+.img .st{position:absolute;left:8px;top:8px;font-size:.58rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:4px;
+  background:rgba(36,32,29,.86);color:#FFFCF9}
+.img .st.standin{background:rgba(179,38,30,.9)}
+
+.steps{display:flex;gap:6px;padding:var(--s3) var(--s4) 0}
+.steps div{flex:1;height:3px;border-radius:2px;background:var(--line)}
+.steps div.on{background:var(--plum)}
+.steplab{padding:8px var(--s4) 0;font-size:var(--text-xs);color:var(--muted);font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase}
+
+
+/* A5: reserved regions. Deliberately empty and loudly marked, because the one thing we
+   must never do is fill them with invented quotes or an invented clinician. */
+.slot{margin-top:var(--s4);border:1.5px dashed var(--disabled);border-radius:var(--r-md);
+  background:#FAF7F4;padding:var(--s4);text-align:center}
+.slot .lab{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#B3261E;margin-bottom:6px}
+.slot .desc{font-size:14px;color:var(--muted);line-height:1.5}
+.slot .box{height:64px;border-radius:8px;background:#EFE9E3;margin-top:10px}
+
+/* A7: checkout trust row. CSS marks only, no third-party logo files. */
+.trust{margin-top:var(--s4);display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  justify-content:center}
+.trust span{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:#FFF}
+.trust .sec{border-color:var(--ok);color:var(--ok)}
+
+.plan .unit{font-size:14px;color:var(--ink-2);font-weight:600;margin-top:2px}
+.claim{border-bottom:1.5px dotted var(--clay)}
+.claim sup{font-size:.55rem;font-weight:700;color:var(--clay);vertical-align:super;
+  margin-left:1px;letter-spacing:.02em}
+.ph{background:#FFF6D6;border-bottom:1.5px dotted #B8912A;padding:0 2px}
+
+.sect{padding:var(--s6) var(--s4);border-top:1px solid var(--line)}
+.sect.alt{background:var(--sand)}
+.sect h3{font-family:var(--font-heading);font-size:var(--text-xl);line-height:1.25;
+  margin-bottom:var(--s2)}
+.faq{border-top:1px solid var(--line);padding:var(--s3) 0}
+.faq b{display:block;font-size:var(--text-base);font-weight:600;margin-bottom:5px}
+.faq p{font-size:var(--text-base);color:var(--ink-2);line-height:1.6}
+
+/* ---- annotation panel ---- */
+.ann{width:380px;background:#FFFDFB;border:1px solid #CFC6BE;border-radius:12px;
+  padding:18px 20px;font-size:.78rem;line-height:1.6;color:#3A332E}
+.ann h4{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:#8A7F76;margin:16px 0 6px;padding-top:12px;border-top:1px solid #EAE2DA}
+.ann h4:first-child{margin-top:0;padding-top:0;border-top:0}
+.ann dl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
+.ann dt{font-weight:700;color:#6B625B;white-space:nowrap}
+.ann ul{margin:0;padding-left:16px}
+.ann li{margin-bottom:3px}
+.ann code{background:#F2EDE8;padding:1px 5px;border-radius:3px;font-size:.72rem;
+  font-family:ui-monospace,Menlo,monospace}
+.ann .k{display:inline-block;font-size:.58rem;font-weight:700;letter-spacing:.06em;
+  padding:2px 6px;border-radius:3px;margin-right:4px}
+.k.br{background:#E6DCE2;color:#6B3A4E}
+.k.rec{background:#DFE7E2;color:#2E6B4F}
+.k.stop{background:#FBECEB;color:#B3261E}
+/* Amber badges. A pause, a soft stop and a soft branch are NOT final states and must
+   never carry the red token. Same rule the screens and the tree already follow. */
+.k.pause{background:#FBF3E3;color:#8A6116}
+.k.soft{background:#FBF3E3;color:#8A6116}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#FFFFFF;padding:0;width:390px}.unit{width:390px}.frame{border:0;border-radius:0}</style></head><body><div class="unit"><div class="code"><b>C-03</b><span>Confirmation</span></div><div class="frame"><div class="bar"><div class="bk"></div><div class="wm">Vellura</div><div class="ct">Step 3 of 3</div></div><div class="steps"><div class="on"></div><div class="on"></div><div class="on"></div></div><div class="steplab">Submitted</div><div class="pad"><div class="ban ok"><b>You are in the queue</b>Nothing has been charged.</div><h2 class="q big">A clinician is reviewing your answers.</h2><p class="body"><span class="claim">Most reviews finish within <span class="ph">24 hours</span>.<sup>C8</sup></span> We email you either way. If you are approved, we charge your card that same moment and the pharmacy begins compounding.</p><div class="card"><div class="ct">On hold, not charged</div><div class="rw"><span>Authorization hold</span><span>$314.00</span></div><div class="rw tot"><span>Charged today</span><span>$0.00</span></div></div><div class="btn gho">Message the care team</div></div></div></div></body></html>
